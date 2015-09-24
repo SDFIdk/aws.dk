@@ -1,5 +1,5 @@
 body {
-  padding-top: 60px;  /*60px to make the container go all the way to the bottom of the topbar */
+  padding-top: 50px;  /*60px to make the container go all the way to the bottom of the topbar */
 }
 
 footer
@@ -9,11 +9,13 @@ footer
 	height: 15px;
 }
 #logo {
-	padding: 5px;
-	height: 35px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 40px;
 }
 
 .anchor-header {
-	padding-top: 60px; 
-	margin-top: -60px;
+	padding-top: 50px; 
+	margin-top: -50px;
 }
