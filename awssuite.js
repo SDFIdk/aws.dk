@@ -4,18 +4,18 @@ var app= express();
 
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.get('/', function (req, res) {
-  res.render('home.jade');
+  res.render('home.pug');
 });
 
 app.get('/licens', function (req, res) {
-  res.render('licens.jade');
+  res.render('licens.pug');
 });
 
 app.get('/support', function (req, res) {
-  res.render('support.jade');
+  res.render('support.pug');
 });
 
 var portnr= (process.env.PORT || 5000);

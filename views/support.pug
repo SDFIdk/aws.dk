@@ -3,9 +3,9 @@ extends layout
 block content
 	div#content.container
 		h1 Support og feedback
-		p Spørgsmål til, meninger om, ønsker til, ideer til eller andre kommentarer omkring AWS Suiten er meget velkomne. Det sker i <a href="http://digitaliser.dk/group/334445">AWS gruppen på Digitaliser.dk</a>. 
+		p Spørgsmål til, meninger om, ønsker til, ideer til eller andre kommentarer omkring AWS Suiten er meget velkomne. Det sker i <a href="https://digitaliser.dk/group/334445">AWS gruppen på Digitaliser.dk</a>.
 
-		p Du kan endvidere holde dig opdateret om AWS Suiten ved at følge os på  
+		p Du kan endvidere holde dig opdateret om AWS Suiten ved at følge os på
 			a(href='https://twitter.com/AWS_Suiten') Twitter.
 
 		p Driftstatus på AWS Suitens services kan du finde <a href='http://stats.pingdom.com/tdobb0hqaff9'>her</a>.
@@ -14,7 +14,7 @@ block content
 
 
 block append scripts
-	script  
+	script.
 		$('#topbar li').removeClass('active');
 		var a= $("#topbar li a[href='support']")[0];
 		var li= $(a).parent().addClass('active');
