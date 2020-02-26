@@ -1,99 +1,100 @@
 extends layout
 
 block content
-  header.jumbotron.subhead
-    div.container
-      h1 AWS Suiten
-    div.container
-      div.row
-        div.span9
+  div.container
+    div.row
+      div.col-lg-12
+        h1 AWS Suiten
+  div.container
+    div.row
+      div.col-lg-9
 
-          section#hvad
-            h3 Hvad er AWS Suiten?
-            p AWS suiten er en fælles betegnelse for en række services, som tilbyder it-systemer adgang til data og funktionalitet om Danmarks adresser. Formålet med AWS Suiten er at give myndigheder, virksomheder og borgere mulighed for at anvende autoritative adresser i deres it-systemer. Kilden til de autoritative adresser er Danmarks Adresseregister, DAR, der ajourføres af kommunerne og fungerer som grunddataregister for adresser i Danmark. AWS er en forkortelse for Adresse Web Services.
+        section#hvad
+          h3 Hvad er AWS Suiten?
+          p AWS suiten er en fælles betegnelse for en række services, som tilbyder it-systemer adgang til data og funktionalitet om Danmarks adresser. Formålet med AWS Suiten er at give myndigheder, virksomheder og borgere mulighed for at anvende autoritative adresser i deres it-systemer. Kilden til de autoritative adresser er Danmarks Adresseregister, DAR, der ajourføres af kommunerne og fungerer som grunddataregister for adresser i Danmark. AWS er en forkortelse for Adresse Web Services.
 
-          section#hvorfor
-            h3 Hvorfor en AWS Suite?
-            p Danmarks adresser bruges i mange sammenhænge. I vores GPS’ere. Til at adressere vores post. Til udskrivning af valgkort. Til at afgøre hvilken skole er vores børn tilknyttet.
-            p Der er mange organisationer - såvel offentlige som private – som anvender Danmarks adresser i deres arbejde og er afhængige af at adressedata er af høj kvalitet. Ambulancen skal hurtigst ud til den aktuelle adresse. Den udsendte post skulle gerne kunne leveres til modtageren og ikke returneres til afsender. Valgkortene skal med respekt for de enkelte afstemningsområder ud til de korrekte modtagere med det korrekte afstemningssted. Det er derfor vigtigt at adressedata er af høj kvalitet. Men det er ikke nok at kvaliteten af data er høj. Det er ligeså vigtigt at de enkelte organisationers adgang til adressedata er optimal. Organisationernes it-systemer skal kunne på en enkel og effektiv måde få adgang til adressedata og -funktionalitet. It-systemer er meget forskellige. Nogle it-systemer fungerer bedst med en servicebaseret adgang til adressedata og -funktionalitet. Andre it-systemer kan kun fungere, hvis de har en lokal kopi af adressedata. Geografiske it-systemer (GIS) fungerer bedst hvis adgangen til adressedata sker gennem GIS standarder.
-            p For at tilfredsstille vores omverdens behov for adgang til adressedata tilbyder Styrelsen for Dataforsyning og Effektivisering (SDFE) en række services, Disse services tilgodeser organisationers forskellige it-systemers behov for adgang til adressedata og -funktionalitet. Seneste version af AWS Suiten er AWS 4.
+        section#hvorfor
+          h3 Hvorfor en AWS Suite?
+          p Danmarks adresser bruges i mange sammenhænge. I vores GPS’ere. Til at adressere vores post. Til udskrivning af valgkort. Til at afgøre hvilken skole er vores børn tilknyttet.
+          p Der er mange organisationer - såvel offentlige som private – som anvender Danmarks adresser i deres arbejde og er afhængige af at adressedata er af høj kvalitet. Ambulancen skal hurtigst ud til den aktuelle adresse. Den udsendte post skulle gerne kunne leveres til modtageren og ikke returneres til afsender. Valgkortene skal med respekt for de enkelte afstemningsområder ud til de korrekte modtagere med det korrekte afstemningssted. Det er derfor vigtigt at adressedata er af høj kvalitet. Men det er ikke nok at kvaliteten af data er høj. Det er ligeså vigtigt at de enkelte organisationers adgang til adressedata er optimal. Organisationernes it-systemer skal kunne på en enkel og effektiv måde få adgang til adressedata og -funktionalitet. It-systemer er meget forskellige. Nogle it-systemer fungerer bedst med en servicebaseret adgang til adressedata og -funktionalitet. Andre it-systemer kan kun fungere, hvis de har en lokal kopi af adressedata. Geografiske it-systemer (GIS) fungerer bedst hvis adgangen til adressedata sker gennem GIS standarder.
+          p For at tilfredsstille vores omverdens behov for adgang til adressedata tilbyder Styrelsen for Dataforsyning og Effektivisering (SDFE) en række services, Disse services tilgodeser organisationers forskellige it-systemers behov for adgang til adressedata og -funktionalitet. Seneste version af AWS Suiten er AWS 4.
 
-          section
-            h3 Formålet med AWS Suiten
-            p Formålet med AWS Suiten er
-            ul
-              li At højne kvaliteten af adresseanvendelser i it-løsninger
-              li At gøre det enklere, nemmere og billigere at anvende autoritative adressedata og -funktionalitet i it-løsninger
-              li At motivere til nye anvendelser af adressedata og -funktionalitet
-              li At være et godt eksempel på hvorledes data og services kan udstilles til motivation for vor omverden
-              li At vi ikke fremover skal indtaste adresser uden hjælp og validering.
+        section
+          h3 Formålet med AWS Suiten
+          p Formålet med AWS Suiten er
+          ul
+            li At højne kvaliteten af adresseanvendelser i it-løsninger
+            li At gøre det enklere, nemmere og billigere at anvende autoritative adressedata og -funktionalitet i it-løsninger
+            li At motivere til nye anvendelser af adressedata og -funktionalitet
+            li At være et godt eksempel på hvorledes data og services kan udstilles til motivation for vor omverden
+            li At vi ikke fremover skal indtaste adresser uden hjælp og validering.
 
-          section#AWS4
-            h3 AWS Suiten version 4
-            p AWS Suiten version 4 er under udvikling består i øjeblikket af følgende eksisterende og kommende services:
-            ul
-              li
-                a(href="https://dawa.aws.dk") DAWA - Danmarks Adressers Web API
-                | , som giver en service baseret adgang til data og funktionalitet om adresser, adgangsadresser, vejnavne, supplerende bynavne og postnumre.
-              li
-                a(href="https://download.aws.dk") Download
-                | , som giver mulighed for at downloade de hyppigst anvendte dataudsnit fra DAWA via et klik på et link, som f.eks. download af de enkelte kommuners adresser.
-              li
-                a(href="https://korttjenester.aws.dk/") Korttjenester
-                | , som giver mulighed for vha. et GIS program at vise adresser på kort (WMS og WFS).
-              li
-                a(href="https://autocomplete.aws.dk") Autocomplete-komponent
-                | , som gør det enkelt at etablere adresseindtastning med autocomplete, så slutbrugere hurtigt og nemt kan indtaste en gyldig adresse.
+        section#AWS4
+          h3 AWS Suiten version 4
+          p AWS Suiten version 4 er under udvikling består i øjeblikket af følgende eksisterende og kommende services:
+          ul
+            li
+              a(href="https://dawa.aws.dk") DAWA - Danmarks Adressers Web API
+              | , som giver en service baseret adgang til data og funktionalitet om adresser, adgangsadresser, vejnavne, supplerende bynavne og postnumre.
+            li
+              a(href="https://download.aws.dk") Download
+              | , som giver mulighed for at downloade de hyppigst anvendte dataudsnit fra DAWA via et klik på et link, som f.eks. download af de enkelte kommuners adresser.
+            li
+              a(href="https://korttjenester.aws.dk/") Korttjenester
+              | , som giver mulighed for vha. et GIS program at vise adresser på kort (WMS og WFS).
+            li
+              a(href="https://autocomplete.aws.dk") Autocomplete-komponent
+              | , som gør det enkelt at etablere adresseindtastning med autocomplete, så slutbrugere hurtigt og nemt kan indtaste en gyldig adresse.
 
-          section#AWS3
-            h3 AWS Suiten version 3
-            p.alert.alert-error <b>AWS Suiten version 3 - Web API er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://dawa.aws.dk">Danmarks Adressers Web API - DAWA</a>.
-            p.alert.alert-error <b>AWS Suiten version 3 - CSV Download er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://download.aws.dk">AWS Suitens Download tjeneste</a>. 
-            p.alert.alert-error <b>AWS Suiten version 3 - Smartadresse er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://autocomplete.aws.dk">AWS Suitens Autocomplete.komponent</a>.
-            p.alert.alert-error <b>AWS Suiten version 3 - Korttjenester er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://korttjenester.aws.dk">AWS Suitens version 4 - Korttjenester</a>.
-            p.alert.alert-error <b>AWS Suiten version 3 - INSPIRE Download udfases d. 1. april 2020.</b> Der henvises til <a href="https://kortforsyningen.dk/indhold/inspire-download">Kortforsyningens INSPIRE tjenester</a>.
-            
-
-
-          section#hvor
-            h3 Hvordan kan jeg holde mig orienteret?
-            p Hvis du gerne vil holdes opdateret om, hvad der sker på AWS Suite området, kan du følge <a href='https://twitter.com/AWS_Suiten'>AWS Suiten på Twitter</a>, som giver dig kort information om AWS Suitens drift og udvikling.
-            p Længere indlæg og bedre mulighed for dialog kan du få ved at følge <a href='https://digitaliser.dk/group/334445'>AWS-gruppen på Digitaliser.dk</a>. Det er også her, du kan stille spørgsmål vedrørende AWS Suiten.
-            p Hvis du er interesseret i hvad der sker på adresseområdet generelt, kan du følge <a href='https://twitter.com/DKAdresser'>Danmarks adresser på twitter</a>.
-            p Driftsstatus for AWS Suitens services kan du se på <a href='http://stats.pingdom.com/tdobb0hqaff9'>AWS Suitens driftsstatus</a>
-
-          section#hvem
-            h3 Hvem står bag AWS Suiten?
-            p <a href='https://sdfe.dk'>Styrelsen for Dataforsyning og Effektivisering (SDFE)</a> er overordnet myndighed for vejnavne og adresser i Danmark, som fastsættes og registreres af kommunerne efter reglerne i Adresseloven og -bekendtgørelsen.
+        section#AWS3
+          h3 AWS Suiten version 3
+          p.alert.alert-danger <b>AWS Suiten version 3 - Web API er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://dawa.aws.dk">Danmarks Adressers Web API - DAWA</a>.
+          p.alert.alert-danger <b>AWS Suiten version 3 - CSV Download er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://download.aws.dk">AWS Suitens Download tjeneste</a>. AWS Suiten version 3 - INSPIRE Download udfases <b>ikke</b>
+          p.alert.alert-danger <b>AWS Suiten version 3 - Smartadresse er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://autocomplete.aws.dk">AWS Suitens Autocomplete.komponent</a>.
+          p.alert.alert-danger <b>AWS Suiten version 3 - Korttjenester er udfaset d. 1. juli 2015.</b> Der henvises til <a href="https://korttjenester.aws.dk">AWS Suitens version 4 - Korttjenester</a>.
+          p.alert.alert-danger <b>AWS Suiten version 3 - INSPIRE Download udfases d. 1. april 2020.</b> Der henvises til <a href="https://kortforsyningen.dk/indhold/inspire-download">Kortforsyningens INSPIRE tjenester</a>.
 
 
-        div.span3
-          section#services
-            h4 Services
-            p
-              a(href="https://dawa.aws.dk") AWS 4 DAWA
-            p
-              a(href="https://download.aws.dk") AWS 4 Download
-            p
-              a(href="https://korttjenester.aws.dk") AWS 4 Korttjenester
-            p
-              a(href="https://autocomplete.aws.dk") AWS 4 Autocomplete
-            p
-              a(href="http://file.aws.dk/inspire.html") AWS 3 Download (INSPIRE)
 
-          section#kontakt
-            h4 Kontakt
-            p
-              a(href="https://digitaliser.dk/group/334445") AWS gruppen på Digitaliser
-            p
-              a(href="https://twitter.com/AWS_Suiten") AWS Suiten på Twitter
-            p
-              a(href="https://twitter.com/DKAdresser") Danmarks adresser på Twitter
+        section#hvor
+          h3 Hvordan kan jeg holde mig orienteret?
+          p Hvis du gerne vil holdes opdateret om, hvad der sker på AWS Suite området, kan du følge <a href='https://twitter.com/AWS_Suiten'>AWS Suiten på Twitter</a>, som giver dig kort information om AWS Suitens drift og udvikling.
+          p Længere indlæg og bedre mulighed for dialog kan du få ved at følge <a href='https://digitaliser.dk/group/334445'>AWS-gruppen på Digitaliser.dk</a>. Det er også her, du kan stille spørgsmål vedrørende AWS Suiten.
+          p Hvis du er interesseret i hvad der sker på adresseområdet generelt, kan du følge <a href='https://twitter.com/DKAdresser'>Danmarks adresser på twitter</a>.
+          p Driftsstatus for AWS Suitens services kan du se på <a href='http://stats.pingdom.com/tdobb0hqaff9'>AWS Suitens driftsstatus</a>
+
+        section#hvem
+          h3 Hvem står bag AWS Suiten?
+          p <a href='https://sdfe.dk'>Styrelsen for Dataforsyning og Effektivisering (SDFE)</a> er overordnet myndighed for vejnavne og adresser i Danmark, som fastsættes og registreres af kommunerne efter reglerne i BBR-loven og adressebekendtgørelsen.
+
+
+      div.col-lg-3
+        section#services
+          h4 Services
+          p
+            a(href="https://dawa.aws.dk") AWS 4 DAWA
+          p
+            a(href="https://download.aws.dk") AWS 4 Download
+          p
+            a(href="https://korttjenester.aws.dk") AWS 4 Korttjenester
+          p
+            a(href="https://autocomplete.aws.dk") AWS 4 Autocomplete
+          p
+            a(href="https://file.aws.dk/inspire.html") AWS 3 Download (INSPIRE)
+
+        section#kontakt
+          h4 Kontakt
+          p
+            a(href="https://digitaliser.dk/group/334445") AWS gruppen på Digitaliser
+          p
+            a(href="https://twitter.com/AWS_Suiten") AWS Suiten på Twitter
+          p
+            a(href="https://twitter.com/DKAdresser") Danmarks adresser på Twitter
 
 
 
 block append scripts
   script.
-    $('#topbar li').removeClass('active');
-    var a= $("#topbar li a[href='/']")[0];
+    $('#navBar li').removeClass('active');
+    var a= $("#navBar li.nav-item a[href='/']")[0];
     var li= $(a).parent().addClass('active');

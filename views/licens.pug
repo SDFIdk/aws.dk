@@ -3,7 +3,7 @@ extends layout
 block content
   div#content.container
     h1 Vilkår for brug af danske offentlige data
-    p(class="text-right") 23. maj 2013
+    p(class="pull-right") 23. maj 2013
     h3 Generel information
     p Styrelsen for Dataforsyning og Effektivisering, herefter Myndigheden, som har de immaterielle rettigheder til Danmarks adresser udbudt gennem AWS Suiten (herefter data), giver på nedenstående vilkår brugsret til data.
     p Vilkårene accepteres ved enhver brug af data. Vilkårene reguleres af dansk ret.
@@ -29,6 +29,6 @@ block content
 
 block append scripts
   script.
-    $('#topbar li').removeClass('active');
-    var a= $("#topbar li a[href='licens']")[0];
+    $('#navBar li').removeClass('active');
+    var a= $("#navBar li.nav-item a.nav-link[href='licens']")[0];
     var li= $(a).parent().addClass('active');
