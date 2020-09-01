@@ -18,6 +18,10 @@ app.get('/support', function (req, res) {
   res.render('support.pug');
 });
 
+app.get('/was', function (req, res) {
+  res.redirect('https://was.digst.dk/aws-dk');
+});
+
 var portnr= (process.env.PORT || 5000);
 console.log("port: %s",portnr);
 app.listen(portnr);
